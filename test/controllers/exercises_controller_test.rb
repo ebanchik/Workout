@@ -15,4 +15,12 @@ class ExercisesControllerTest < ActionDispatch::IntegrationTest
       assert_response 200
     end
   end
+
+  test "show" do
+    get "/exercises/#{Exercise.first.id}.json"
+    assert_response 200
+
+    data = JSON.parse(response.body)
+    assert_equal ["name", "sets", "reps", "break", "style"], data.keys
+  end
 end
