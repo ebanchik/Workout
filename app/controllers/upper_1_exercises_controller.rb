@@ -1,0 +1,2 @@
+class Upper1ExercisesController < ApplicationController
+end
