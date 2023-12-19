@@ -1,1 +1,1 @@
-json.array! @upper_1_exercises, partial: "upper_1_exercises/upper_1_exercise", as: :upper_1_exercise
+json.array! @upper1, partial: "upper1/upper1", as: :upper1

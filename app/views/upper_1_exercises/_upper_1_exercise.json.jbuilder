@@ -1,2 +1,5 @@
-json.extract! upper_1_exercise, :id, :created_at, :updated_at
-json.url upper_1_exercise_url(upper_1_exercise, format: :json)
+json.name upper1.name
+json.sets upper1.sets
+json.reps upper1.reps
+json.break upper1.break
+json.style upper1.style

@@ -1,6 +1,6 @@
-class CreateUpper1s < ActiveRecord::Migration[7.0]
+class CreateUpper1 < ActiveRecord::Migration[7.0]
   def change
-    create_table :Upper1s do |t|
+    create_table :upper1 do |t|
       t.string :name
       t.integer :sets
       t.string :reps

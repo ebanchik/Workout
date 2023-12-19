@@ -31,5 +31,4 @@ class ExercisesController < ApplicationController
     )
     render :show
   end
-
 end
