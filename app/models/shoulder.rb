@@ -1,0 +1,2 @@
+class Shoulder < ApplicationRecord
+end

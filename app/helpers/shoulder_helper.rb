@@ -1,0 +1,2 @@
+module ShoulderHelper
+end

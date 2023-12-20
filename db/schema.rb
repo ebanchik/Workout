@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_20_044311) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_20_050105) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,6 +23,28 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_20_044311) do
     t.datetime "updated_at", null: false
     t.string "style"
     t.string "day"
+  end
+
+  create_table "legs", force: :cascade do |t|
+    t.string "name"
+    t.string "sets"
+    t.integer "reps"
+    t.string "break"
+    t.string "style"
+    t.string "day"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "shoulders", force: :cascade do |t|
+    t.string "name"
+    t.string "sets"
+    t.integer "reps"
+    t.string "break"
+    t.string "style"
+    t.string "day"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "upper1s", force: :cascade do |t|
@@ -38,7 +60,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_20_044311) do
 
   create_table "upper2s", force: :cascade do |t|
     t.string "name"
-    t.integer "sets"
+    t.string "sets"
     t.string "break"
     t.string "style"
     t.string "day"

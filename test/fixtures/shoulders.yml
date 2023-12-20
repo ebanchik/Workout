@@ -2,16 +2,16 @@
 
 one:
   name: MyString
-  sets: 1
-  reps: MyString
+  sets: MyString
+  reps: 1
   break: MyString
   style: MyString
   day: MyString
 
 two:
   name: MyString
-  sets: 1
-  reps: MyString
+  sets: MyString
+  reps: 1
   break: MyString
   style: MyString
   day: MyString

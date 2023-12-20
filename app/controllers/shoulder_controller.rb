@@ -1,9 +1,9 @@
-class Upper1Controller < ApplicationController
-  
-  def upper1_exercises
-    @source_exercises = Exercise.where(day: "Upper 1")
+class ShoulderController < ApplicationController
+
+  def shoulder_exercises
+    @source_exercises = Exercise.where(day: "Shoulders")
     @source_exercises.each do |exercise|
-      Upper1.create!(
+      Shoulder.create!(
         name: exercise.name,
         sets: exercise.sets,
         reps: exercise.reps,
@@ -13,15 +13,6 @@ class Upper1Controller < ApplicationController
       rescue => e
         puts "Failed to create record: #{e.message}"
     end
-    render :upper1
-
+    render :shoulder_exercises
   end
-
-  def index
-    @exercises = Upper1.all
-    respond_to do |format|
-      format.json { render json: @exercises }
-    end
-  end
-
 end

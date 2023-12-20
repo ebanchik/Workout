@@ -11,6 +11,8 @@ class ExercisesController < ApplicationController
       reps: params[:reps],
       break: params[:break],
       style: params[:style],
+      id: params[:id],
+      day: params[:day]
     )
     render :show
   end
@@ -28,6 +30,8 @@ class ExercisesController < ApplicationController
       reps: params[:reps] || @exercise.reps,
       break: params[:break] || @exercise.break,
       style: params[:style] || @exercise.style,
+      id: params[:id] || @exercise.id,
+      day: params[:day] || @exercise.day
     )
     render :show
   end
