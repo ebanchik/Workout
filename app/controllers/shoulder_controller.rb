@@ -15,4 +15,12 @@ class ShoulderController < ApplicationController
     end
     render :shoulder_exercises
   end
+
+  def index
+    @exercises = Shoulder.all
+    respond_to do |format|
+      format.json { render json: @exercises }
+    end
+  end
+  
 end

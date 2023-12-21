@@ -35,4 +35,11 @@ class ExercisesController < ApplicationController
     )
     render :show
   end
+
+  # def move
+  #   @source_exercise = Exercise.find(id: params[:id])
+  #   Upper2.create(source_exercise.attributes)
+  #   redirect_to 'exercises#index', notice: 'Exercise copied successfully.'
+  # end
+
 end

@@ -3,5 +3,11 @@ Rails.application.routes.draw do
   # post "/exercises" => "exercises#create"
   # get "/exercises/:id" => "exercises#show"
   # patch "/exercises/:id" => "exercises#update"
-  resources :exercises, :upper1
+  root to: 'exercises#index'
+  resources :upper1, :upper2, :shoulder, :leg
+  resources :exercises do
+    member do
+      get :copy
+    end
+  end
 end

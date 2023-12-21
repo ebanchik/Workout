@@ -16,4 +16,11 @@ class LegController < ApplicationController
     render :leg_exercises
   end
 
+  def index
+    @exercises = Leg.all
+    respond_to do |format|
+      format.json { render json: @exercises }
+    end
+  end
+
 end

@@ -15,4 +15,12 @@ class Upper2Controller < ApplicationController
     end
     render :upper2_exercises
   end
+
+  def index
+    @exercises = Upper2.all
+    respond_to do |format|
+      format.json { render json: @exercises }
+    end
+  end
+
 end 
