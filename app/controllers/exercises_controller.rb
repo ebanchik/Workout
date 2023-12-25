@@ -9,7 +9,7 @@ class ExercisesController < ApplicationController
       name: params[:name],
       sets: params[:sets],
       reps: params[:reps],
-      break: params[:break],
+      break_t: params[:break_t],
       style: params[:style],
       id: params[:id],
       day: params[:day]
@@ -28,7 +28,7 @@ class ExercisesController < ApplicationController
       name: params[:name] || @exercise.name,
       sets: params[:sets] || @exercise.sets,
       reps: params[:reps] || @exercise.reps,
-      break: params[:break] || @exercise.break,
+      break_t: params[:break_t] || @exercise.break_t,
       style: params[:style] || @exercise.style,
       id: params[:id] || @exercise.id,
       day: params[:day] || @exercise.day

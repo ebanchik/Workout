@@ -9,6 +9,7 @@ class Upper1Controller < ApplicationController
         reps: exercise.reps,
         break: exercise.break,
         style: exercise.style,
+        id: exercise.id,
         day: exercise.day)
       rescue => e
         puts "Failed to create record: #{e.message}"

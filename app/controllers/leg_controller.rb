@@ -7,7 +7,7 @@ class LegController < ApplicationController
         name: exercise.name,
         sets: exercise.sets,
         reps: exercise.reps,
-        break: exercise.break,
+        break_t: exercise.break_t,
         style: exercise.style,
         day: exercise.day)
       rescue => e

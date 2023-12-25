@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_20_050105) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_23_222739) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -18,7 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_20_050105) do
     t.string "name"
     t.integer "sets"
     t.string "reps"
-    t.string "break"
+    t.string "break_t"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "style"
@@ -29,7 +29,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_20_050105) do
     t.string "name"
     t.string "sets"
     t.integer "reps"
-    t.string "break"
+    t.string "break_t"
     t.string "style"
     t.string "day"
     t.datetime "created_at", null: false
@@ -40,7 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_20_050105) do
     t.string "name"
     t.string "sets"
     t.integer "reps"
-    t.string "break"
+    t.string "break_t"
     t.string "style"
     t.string "day"
     t.datetime "created_at", null: false
@@ -51,7 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_20_050105) do
     t.string "name"
     t.integer "sets"
     t.string "reps"
-    t.string "break"
+    t.string "break_t"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "style"
@@ -61,7 +61,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_20_050105) do
   create_table "upper2s", force: :cascade do |t|
     t.string "name"
     t.string "sets"
-    t.string "break"
+    t.string "break_t"
     t.string "style"
     t.string "day"
     t.datetime "created_at", null: false
