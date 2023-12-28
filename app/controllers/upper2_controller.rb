@@ -7,7 +7,7 @@ class Upper2Controller < ApplicationController
         name: exercise.name,
         sets: exercise.sets,
         reps: exercise.reps,
-        break: exercise.break,
+        break: exercise.break_t,
         style: exercise.style,
         day: exercise.day)
       rescue => e
