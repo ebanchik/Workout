@@ -15,4 +15,5 @@ Rails.application.routes.draw do
       get :copy
     end
   end
+  mount ActionCable.server => '/cable'
 end
