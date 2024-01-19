@@ -84,3 +84,4 @@ production:
   database: Workout_production
   username: Workout
   password: <%= ENV["WORKOUT_DATABASE_PASSWORD"] %>
+  HEROKU_DEBUG_RAILS_RUNNER=1
