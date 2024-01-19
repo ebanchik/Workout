@@ -1,3 +1,4 @@
+json.id exercise.id
 json.name exercise.name
 json.sets exercise.sets
 json.reps exercise.reps
