@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # get "/upper2" => "upper2#index"
   # get "/shoulder" => "shoulder#index"
   # get "/leg" => "leg#index"
+  delete "/exercises" => "exercises#destroy"
 
   root to: 'exercises#index'
   resources :upper1, :upper2, :shoulder, :leg

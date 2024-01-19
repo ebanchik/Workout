@@ -39,6 +39,13 @@ class ExercisesController < ApplicationController
     render :show
   end
 
+  def destroy
+    @exercise = Exercise.find_by(id: params[:id])
+    @exercise.destroy
+    render json: { message: "exercise destroyed successfully" }
+  end
+
+
   # def move
   #   @source_exercise = Exercise.find(id: params[:id])
   #   Upper2.create(source_exercise.attributes)
